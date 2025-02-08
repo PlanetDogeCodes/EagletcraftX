@@ -1,4 +1,4 @@
-# Eagletcraft-1.8
+# EagletcraftX
 Eagletcraft is a packaged and optimized version of Eaglercraft that runs well on low end devices, such as chromebooks.
 
 **HOW IT WORKS:**
