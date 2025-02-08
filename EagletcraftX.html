@@ -1,0 +1,83 @@
+<!--
+
+
+
+EaglercraftX 1.8 by lax1dude and ayunami2000
+
+Eagletcraft compiled and Packaged by PlanetDoge w/ help from the PlanetGamez team
+
+EaglercraftX average RAM usage: 1.2 GB
+EagletcraftX average RAM usage: 0.6 GB
+
+
+
+
+
+
+
+
+PlanetGamez: https://sites.google.com/view/planet-gamez/
+
+
+-->
+
+<html><head><base target="_blank"></head><body><div id="fr" data="<iframe width=&quot;100%&quot; height=&quot;100%&quot; src=&quot;https://he64y-opensocial.googleusercontent.com/gadgets/ifr?url=https://groups.google.com/u/6/group/hornedo-middle-school/attach/21aa6a31b8e48/z4646.xml?part=0.1&amp;view=1&amp;authuser=6&amp;container=ig&quot; frameborder=&quot;0&quot; allowfullscreen></iframe>"></div>
+<button class="c-button" type="button" onclick="PlayTo(this)">Click to Play</button>
+<div class="bottom-text"></div>
+
+<style>
+  .c-button {
+    min-width: 100%;
+    font-family: fantasy;
+    appearance: auto;
+    border: 0;
+    border-color: #fff;
+    border-radius: 5px;
+    background: #000;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .c-button:hover {
+    background: #320d90;
+  }
+  
+  .c-button:focus {
+    outline: 0;
+    box-shadow: 0 0 0 4px #cbd6ee;
+  }
+  
+  .c-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .bottom-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+</style>
+
+<script>
+  function PlayTo(i) {
+    // The previous sibling could be the text node, so this finds the previous "element" sibling.
+    var n = i.previousElementSibling;
+    if (n) {
+      // Updates the content of the div with the iframe data.
+      n.innerHTML = n.getAttribute("data");
+      i.style.display = "none";
+    }
+  }
+</script>
+</body></html>
