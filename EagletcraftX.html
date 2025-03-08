@@ -4,10 +4,10 @@
 
 EaglercraftX 1.8 by lax1dude and ayunami2000
 
-Eagletcraft compiled and Packaged by PlanetDoge w/ help from the PlanetGamez team
+Eagletcraft compiled by PlanetDoge w/ help from the PlanetGamez team
 
 EaglercraftX average RAM usage: 1.2 GB
-EagletcraftX average RAM usage: 0.6 GB
+Eagletcraft average RAM usage: 0.6 GB
 
 
 
@@ -17,16 +17,35 @@ EagletcraftX average RAM usage: 0.6 GB
 
 
 PlanetGamez: https://sites.google.com/view/planet-gamez/
-OneCompiler Link: https://onecompiler.com/html/4388at6gk
+GitHub Link: https://github.com/PlanetDogeCodes/EagletcraftX/
 
 -->
 
-<html><head><base target="_blank"></head><body><div id="fr" data="<iframe width=&quot;100%&quot; height=&quot;100%&quot; src=&quot;https://he64y-opensocial.googleusercontent.com/gadgets/ifr?url=https://groups.google.com/u/6/group/hornedo-middle-school/attach/21aa6a31b8e48/z4646.xml?part=0.1&amp;view=1&amp;authuser=6&amp;container=ig&quot; frameborder=&quot;0&quot; allowfullscreen></iframe>"></div>
-<button class="c-button" type="button" onclick="PlayTo(this)">Click to Play</button>
-<div class="bottom-text"></div>
+<html><head><base target="_blank"></head><body><div id="container">
+  <iframe id="fr" width="100%" height="100%" frameborder="0" allowfullscreen=""></iframe>
+  <button class="c-button" type="button" onclick="PlayTo(this)">CLICK TO PLAY</button>
+
+</div>
 
 <style>
+  #container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  #fr {
+    display: none;
+    width: 100%;
+    height: 100%;
+  }
+
   .c-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     min-width: 100%;
     font-family: fantasy;
     appearance: auto;
@@ -37,47 +56,45 @@ OneCompiler Link: https://onecompiler.com/html/4388at6gk
     color: #fff;
     font-size: 30px;
     cursor: pointer;
+    z-index: 1;
   }
-  
+
   .c-button:hover {
     background: #320d90;
   }
-  
-  .c-button:focus {
-    outline: 0;
-    box-shadow: 0 0 0 4px #cbd6ee;
-  }
-  
-  .c-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-  }
-  
-  .bottom-text {
+
+  #unblocked-text {
     position: absolute;
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-    font-family: Arial, sans-serif;
+    font-family: fantasy;
     font-size: 20px;
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 5px 10px;
-    border-radius: 5px;
+    z-index: 1;
+    text-shadow: 0 0 5px #000;
   }
 </style>
 
 <script>
-  function PlayTo(i) {
-    // The previous sibling could be the text node, so this finds the previous "element" sibling.
-    var n = i.previousElementSibling;
-    if (n) {
-      // Updates the content of the div with the iframe data.
-      n.innerHTML = n.getAttribute("data");
-      i.style.display = "none";
-    }
+  function PlayTo(button) {
+    var iframe = document.getElementById("fr");
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState == 4 && xhr.status == 200) {
+        iframe.contentDocument.open();
+        iframe.contentDocument.write(xhr.responseText);
+        iframe.contentDocument.close();
+        iframe.style.display = "block";
+        button.style.display = "none";
+      }
+    };
+    xhr.open("GET", "https://cdn.jsdelivr.net/gh/block-blast-fastx/8788@main/mcmc.xml");
+    xhr.send();
   }
-</script>
-</body></html>
+</script></body></html>
+
+<!--
+HOW IT WORKS:
+Eagletcraft was made by distibuting the code of EaglercraftX into many seperate hosted files, then using the page you're on now as a sort of relay for all the seperate files to communicate with one another. This inherently creates latency, so all the files are loaded onto your PC's flash memory to combat this. When the files are loaded to your flash memory, you can turn off wifi and play offline.
+-->
