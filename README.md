@@ -1,5 +1,5 @@
 # EagletcraftX
-Eagletcraft is a packaged and optimized version of Eaglercraft that runs well on low end devices, such as chromebooks.
+Eagletcraft is a packaged and optimized version of Eaglercraft that runs well on low end devices, such as chromebooks. This repository contains what you need to run Eagletcraft on your own along with the source (xml) file.
 
 **HOW IT WORKS:**
 Eagletcraft was made by distibuting the code of EaglercraftX into many seperate hosted files, then using an html page as a relay for all the seperate files to communicate with one another. This inherently creates latency, so all static files are preloaded onto your PC's flash memory to combat this. 
