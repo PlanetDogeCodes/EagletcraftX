@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-<ModulePrefs title="Google.com" />
+<ModulePrefs title="Clever | Portal" />
 <Content type="html"><![CDATA[
 
 <!DOCTYPE html>
+
+<!-- It is genuinely annoying how many times I have had to fix this bug-riddled program. So please, enjoy it for the 9 days it works. -->
+  
 <html>
 <head>
-  <title>EaglercraftX</title>
+  <title>Clever | Portal</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
-    /* Sayfa ve oyun çerçevesi için temel düzenlemeler */
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
-      overflow: hidden; /* Sayfanın gereksiz kaymasını engeller */
+      overflow: hidden; 
     }
 
     #game_frame {
@@ -24,7 +26,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #000; /* Arka plan rengi, isteğe bağlı */
+      background-color: #000; 
     }
   </style>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/mece188/feh@main/classes.min.js"></script>
