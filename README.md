@@ -1,7 +1,7 @@
 # EagletcraftX
 Eagletcraft is a packaged and optimized version of Eaglercraft that runs well on low end devices, such as chromebooks. This repository contains what you need to run Eagletcraft on your own along with the source (xml) file.
 
-Note: As of 4-5-2025, EagletcraftX will no longer recieve weekly patches. This is due to the dicontinuation of service for the base game, _Eagler_craftX 1.8
+Note: As of 4-5-2025, EagletcraftX will no longer recieve weekly patches. This is due to the dicontinuation of service for the base game, _Eagler_ craftX 1.8
 
 **HOW IT WORKS:**
 Eagletcraft was made by distibuting the code of EaglercraftX into many seperate hosted files, then using an html page as a relay for all the seperate files to communicate with one another. This inherently creates latency, so all static files are preloaded onto your PC's flash memory to combat this. 
